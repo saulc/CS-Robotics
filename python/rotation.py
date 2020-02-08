@@ -1,4 +1,4 @@
-import math
+from math import pi, cos, sin, tan
 import numpy as np
 
 
@@ -6,11 +6,11 @@ def deg(rad):
     return rad/pi
 
 def rad(deg):
-    return math.pi * deg/180
+    return pi * deg/180
 
 
 def demo():
-    print (math.pi)
+    print (pi)
     # https://www.programiz.com/python-programming/matrix
     v = np.array([ [5], [30], [10] ])
     A = np.array([[2, 4], [5, -6]])
@@ -27,8 +27,8 @@ def demo():
 def ex3():
     v = np.array([ [5], [30], [10] ])
 
-    r1 = np.array([ [math.cos(rad(30)), -math.sin(rad(30)), 0] ,
-                [math.sin(rad(30)), math.cos(rad(30)), 0],
+    r1 = np.array([ [cos(rad(30)), -sin(rad(30)), 0] ,
+                [sin(rad(30)), cos(rad(30)), 0],
                 [0, 0, 1] ])
     print(r1)
 
