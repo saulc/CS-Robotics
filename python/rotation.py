@@ -1,0 +1,35 @@
+import math
+import numpy as np
+
+
+print (math.pi)
+
+# https://www.programiz.com/python-programming/matrix
+v = np.array([ [5], [30], [10] ])
+A = np.array([[2, 4], [5, -6]])
+B = np.array([[9, -3], [3, 6]])
+C = A + B      # element wise addition
+print(A)
+print(B)
+print("C = A + B")
+print(C)
+print("C = A dot B")
+C = A.dot(B)
+print(C)
+
+# x = np.array([ [sin(30)] ], [30], [10] ])
+
+
+
+
+# A = [[1, 4, 5, 12],
+#     [-5, 8, 9, 0],
+#     [-6, 7, 11, 19]]
+# print("A =", A)
+# print("A[1] =", A[1])      # 2nd row
+# print("A[1][2] =", A[1][2])   # 3rd element of 2nd row
+# print("A[0][-1] =", A[0][-1])   # Last element of 1st Row
+# column = [];        # empty list
+# for row in A:
+#   column.append(row[2])
+# print("3rd column =", column)
